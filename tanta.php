@@ -1,25 +1,32 @@
 <?php
  
+    start();
     function start()
     { echo"Escolha qual jogo deseja jogar:\n";
 
-        $escolha = readline("Lotomania. lotofácil. quina. mega-sena.");
+        $escolha = readline("Lotomania. lotofácil. quina. mega-sena.\n");
 
         if ($escolha == "Lotomania". "lotomania". "LOTOMANIA") {
-            lotomania();
+            lotomania($minDezenas, $maxDezenas, $totalDezenas);
         }
         if ($escolha == "Lotofácil". "Lotofacil". "lotofacil". "lotofácil". "LOTOFACIL". "LOTOFÁCIL") {
             lotofacil();
         }
-        if ($escolha == "Quina". "quina". "QUINA") {
+        if ($escolha == "quina" or $escolha == "Quina") {
             quina();
         }
-        if ($escolha == "mega-sena". "MEGA-SENA". "mega"."MEGA"."mega sena". "MEGA SENA". "Mega". "Mega Sena"){
+        if ($escolha == "mega" or $escolha == "Mega" or $escolha == "Mega-Sena" or $escolha == "Mega-sena"or $escolha == "mega sena") {
             mega();
         }
     }
 
-    function lotomania(){
+    function lotomania($minDezenas, $maxDezenas, $totalDezenas){
+        
+        
+         if ($totalDezenas < $minDezenas || $totalDezenas > $maxDezenas) {
+            echo "Número de dezenas fora do intervalo permitido.";
+            return;
+        }     
 
     }
  
