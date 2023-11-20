@@ -340,6 +340,6 @@
       echo  $elemento .  ", ";
       }
       echo "\n.................................................";
-        //fazer o quanto ela ganhou
+ 
         }
 ?>
