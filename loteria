@@ -128,7 +128,11 @@
 
         $total_MS = $numApostas * $gasto_por_aposta_MS;
         echo ("O valor gasto foi R$". $total_MS );
+       numerosSorteados($dezenas, $elemento);
     }
+
+
+
 
 
 
@@ -188,7 +192,13 @@
 
         $total_QUINA = $numApostas * $gasto_por_aposta_QUINA;
         echo ("O valor gasto foi R$". $total_QUINA );
+       numerosSorteados($dezenas, $elemento);
     }
+
+
+
+
+
 
     function lotomania($jogoGanhador)
 {
@@ -210,7 +220,12 @@
 
     $total_LOTOMANIA = $numApostas * $gasto_por_aposta_LOTOMANIA;
     echo ("O valor gasto foi R$". $total_LOTOMANIA . ",00");
+   numerosSorteados($dezenas, $elemento);
 }
+
+
+
+
 
     function lotofacil($jogoGanhador)
 {
@@ -247,9 +262,12 @@
     }
 
     $total_LOTOFACIL = $numApostas * $gasto_por_aposta_LOTOFACIL;
-    echo ("O valor gasto foi R$". $total_LOTOFACIL );
+    echo ("\n=O valor gasto foi R$". $total_LOTOFACIL );
+    numerosSorteados($dezenas, $elemento);
 
-}
+  }
+
+
 
 
 
@@ -313,10 +331,15 @@
         $numerosAcertados = array_intersect($jogoUsuario, $jogoGanhador);
         $quantidadeAcertos = count($numerosAcertados);
 
-        echo "Número de acertos: $quantidadeAcertos\n";
+        echo "=Número de acertos: $quantidadeAcertos\n";
       
     }
-
-
+    function numerosSorteados($dezenas, $elemento) {
+      echo "\n\n\n\n\nCONFIRA ABAIXO OS NÚMEROS SORTEADOS\n\n.................................................\n"; 
+      foreach ($dezenas as $elemento) {
+      echo  $elemento .  ", ";
+      }
+      echo "\n.................................................";
         //fazer o quanto ela ganhou
+        }
 ?>
