@@ -334,9 +334,9 @@
         echo "=Número de acertos: $quantidadeAcertos\n";
       
     }
-    function numerosSorteados($dezenas, $elemento) {
+    function numerosSorteados($jogoGanhador, $elemento) {
       echo "\n\n\n\n\nCONFIRA ABAIXO OS NÚMEROS SORTEADOS\n\n.................................................\n"; 
-      foreach ($dezenas as $elemento) {
+      foreach ($jogoGanhador as $elemento) {
       echo  $elemento .  ", ";
       }
       echo "\n.................................................";
