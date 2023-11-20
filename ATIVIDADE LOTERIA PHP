@@ -21,16 +21,16 @@
         switch ($opcao)
         {
         case 1:
-            megaSena($jogoGanhador,$elemento); 
+            megaSena($jogoGanhador); 
             break;
         case 2:
-            quina($jogoGanhador,$elemento); 
+            quina($jogoGanhador); 
             break;
         case 3:
-            lotomania($jogoGanhador,$elemento); 
+            lotomania($jogoGanhador); 
             break;
         case 4:
-            lotofacil($jogoGanhador,$elemento); 
+            lotofacil($jogoGanhador); 
             break;
         default:
             echo "Jogo inválido. Escolha outro.\n";
@@ -62,7 +62,7 @@
 
 
 
-    function megaSena($jogoGanhador, &$elemento)
+    function megaSena($jogoGanhador)
     {
       echo "-----------Mega Sena-----------\n";
       echo "\n\n->->->->->->->->->->->->->->->\nPara obter a premiação no jogo Mega Sena\né necessário acertar 4, 5 ou 6 números.\n<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-\n";
@@ -136,7 +136,7 @@
 
 
 
-    function quina($jogoGanhador,&$elemento)
+    function quina($jogoGanhador)
     {
       echo "-----------Quina-----------\n";
       echo "\n\n->->->->->->->->->->->->->->->\nPara obter a premiação no jogo Quina\né necessário acertar 2, 3, 4 ou 5 números.\n<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-\n";
@@ -200,7 +200,7 @@
 
 
 
-    function lotomania($jogoGanhador, &$elemento)
+    function lotomania($jogoGanhador)
 {
   echo "-----------Lotomania-----------\n";
   echo "\n\n->->->->->->->->->->->->->->->->->->\nPara obter a premiação no jogo Lotomania\né necessário acertar 20, 19, 18, 17, 16 ,15 ou nenhum número.\n<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-\n";
@@ -227,7 +227,7 @@
 
 
 
-    function lotofacil($jogoGanhador, &$elemento)
+    function lotofacil($jogoGanhador)
 {
     echo "-----------Lotofácil-----------\n";
     echo "\n\n->->->->->->->->->->->->->->->->->\nPara obter a premiação no jogo Lotofácil \né necessário acertar 11, 12, 13, 14 ou 15 números.\n<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-\n";
