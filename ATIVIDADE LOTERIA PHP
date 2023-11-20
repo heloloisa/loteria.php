@@ -128,7 +128,7 @@
 
         $total_MS = $numApostas * $gasto_por_aposta_MS;
         echo ("O valor gasto foi R$". $total_MS );
-       numerosSorteados($dezenas, $elemento);
+       numerosSorteados($jogoGanhador, $elemento);
     }
 
 
@@ -192,7 +192,7 @@
 
         $total_QUINA = $numApostas * $gasto_por_aposta_QUINA;
         echo ("O valor gasto foi R$". $total_QUINA );
-       numerosSorteados($dezenas, $elemento);
+       numerosSorteados($jogoGanhador, $elemento);
     }
 
 
@@ -220,7 +220,7 @@
 
     $total_LOTOMANIA = $numApostas * $gasto_por_aposta_LOTOMANIA;
     echo ("O valor gasto foi R$". $total_LOTOMANIA . ",00");
-   numerosSorteados($dezenas, $elemento);
+   numerosSorteados($jogoGanhador, $elemento);
 }
 
 
@@ -263,7 +263,7 @@
 
     $total_LOTOFACIL = $numApostas * $gasto_por_aposta_LOTOFACIL;
     echo ("\n=O valor gasto foi R$". $total_LOTOFACIL );
-    numerosSorteados($dezenas, $elemento);
+    numerosSorteados($jogoGanhador, $elemento);
 
   }
 
